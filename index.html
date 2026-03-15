@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cafe Cruz de la Colina | Cafe premium</title>
+    <meta
+      name="description"
+      content="Cafe premium tostado y molido. Descubre variedades Arabigo y Robusta, y complementos para tu ritual cafetero."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Cafe Cruz de la Colina">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="logo-text">
+            <span class="brand" data-i18n="brand">Cafe Cruz de la Colina</span>
+            <span class="tagline" data-i18n="tagline">Cafe artesanal premium</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Principal">
+          <ul>
+            <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li class="has-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false" data-i18n="nav.coffees">
+                Cafes
+              </button>
+              <ul class="dropdown">
+                <li><a href="cafe-arabigo.html" data-i18n="nav.arabica">Cafe Arabigo</a></li>
+                <li><a href="cafe-robusta.html" data-i18n="nav.robusta">Cafe Robusta</a></li>
+              </ul>
+            </li>
+            <li><a href="#producto" data-i18n="nav.product">Producto</a></li>
+            <li><a href="#complementos" data-i18n="nav.complements">Complementos</a></li>
+            <li><a href="#nosotros" data-i18n="nav.about">Sobre Nosotros</a></li>
+            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-toggle" role="group" aria-label="Selector de idioma">
+            <button class="lang-btn active" type="button" data-lang="es">ES</button>
+            <button class="lang-btn" type="button" data-lang="en">EN</button>
+          </div>
+          <button class="cart-btn" type="button" aria-label="Carrito">
+            <span data-i18n="cart">Carrito</span>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Desde la altura andina a tu taza</p>
+          <h1 data-i18n="hero.title">Cafe Cruz de la Colina</h1>
+          <p class="hero-text" data-i18n="hero.subtitle">
+            Tradicion, aroma y caracter en cada taza.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#cafes" data-i18n="hero.ctaPrimary">Ver Cafes</a>
+            <a class="btn ghost" href="#complementos" data-i18n="hero.ctaSecondary">Ver Complementos</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label" data-i18n="hero.meta1Label">Origen</span>
+              <span class="meta-value" data-i18n="hero.meta1Value">Montanas del gran Santander, Colombia</span>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="hero.meta2Label">Tostion</span>
+              <span class="meta-value" data-i18n="hero.meta2Value">Media a media-alta</span>
+            </div>
+            <div>
+              <span class="meta-label" data-i18n="hero.meta3Label">Entrega</span>
+              <span class="meta-value" data-i18n="hero.meta3Value">Fresca cada semana</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cafes" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="coffees.eyebrow">Catalogo esencial</p>
+              <h2 data-i18n="coffees.title">Variedades premium</h2>
+              <p data-i18n="coffees.subtitle">
+                Dos perfiles definidos para paladares exigentes. Seleccion de origen y tostion precisa para un cafe con identidad.
+              </p>
+            </div>
+            <a class="btn ghost" href="#contacto" data-i18n="coffees.cta">Solicitar muestras</a>
+          </div>
+          <div class="grid two">
+            <article class="product-card">
+              <img src="cafe1.png" alt="Cafeto Arabigo" />
+              <div class="product-body">
+                <h3 data-i18n="arabica.title">Cafe Arabigo</h3>
+                <p data-i18n="arabica.short">
+                  Aromatico, suave y complejo. Acidez equilibrada con notas florales.
+                </p>
+                <div class="price">$ 48.000</div>
+                <div class="card-actions">
+                  <a class="btn primary" href="cafe-arabigo.html" data-i18n="arabica.cta">Ver detalle</a>
+                  <button class="btn ghost" type="button" data-i18n="buy">Comprar ahora</button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="01.png" alt="Cafeto Robusta" />
+              <div class="product-body">
+                <h3 data-i18n="robusta.title">Cafe Robusta</h3>
+                <p data-i18n="robusta.short">
+                  Cuerpo intenso, sabor fuerte y alta cafeina. Ideal para mezclas potentes.
+                </p>
+                <div class="price">$ 44.000</div>
+                <div class="card-actions">
+                  <a class="btn primary" href="cafe-robusta.html" data-i18n="robusta.cta">Ver detalle</a>
+                  <button class="btn ghost" type="button" data-i18n="buy">Comprar ahora</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="complementos" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="complements.eyebrow">Complementos cafeteros</p>
+              <h2 data-i18n="complements.title">Todo para tu ritual</h2>
+              <p data-i18n="complements.subtitle">
+                Accesorios elegidos para realzar aroma, textura y presentacion con estilo cafetero.
+              </p>
+            </div>
+          </div>
+          <div class="grid three">
+            <article class="product-card compact image-only">
+              <img src="cafetera1.jpg" alt="Cafetera premium" />
+            </article>
+            <article class="product-card compact image-only">
+              <img src="cafetera2.jpg" alt="Cafetera premium" />
+            </article>
+            <article class="product-card compact image-only">
+              <img src="cafetera3.jpg" alt="Cafetera premium" />
+            </article>
+            <article class="product-card compact image-only">
+              <img src="cafetera4.jpg" alt="Cafetera premium" />
+            </article>
+            <article class="product-card compact image-only">
+              <img src="cofee7.jpeg" alt="Pocillos artesanales" />
+            </article>
+            <article class="product-card compact image-only">
+              <img src="cofee5.jpeg" alt="Gorra Cruz de la Colina" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="producto" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="product.eyebrow">Presentaciones</p>
+              <h2 data-i18n="product.title">Empaques disponibles</h2>
+              <p data-i18n="product.subtitle">
+                Empaques premium para conservar aroma, frescura y caracter en cada lote.
+              </p>
+            </div>
+          </div>
+          <div class="grid four">
+            <article class="product-card compact">
+              <img src="empaque1.jpg" alt="Empaque de cafe 250 gr" />
+              <div class="product-body">
+                <div class="price" data-i18n="product.size250">250 gr</div>
+              </div>
+            </article>
+            <article class="product-card compact">
+              <img src="empaque2.jpg" alt="Empaque de cafe 500 gr" />
+              <div class="product-body">
+                <div class="price" data-i18n="product.size500">500 gr</div>
+              </div>
+            </article>
+            <article class="product-card compact">
+              <img src="empaque3.jpg" alt="Empaque de cafe 250 gr" />
+              <div class="product-body">
+                <div class="price" data-i18n="product.size250">250 gr</div>
+              </div>
+            </article>
+            <article class="product-card compact">
+              <img src="empaque4.jpg" alt="Empaque de cafe 500 gr" />
+              <div class="product-body">
+                <div class="price" data-i18n="product.size500">500 gr</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="section">
+        <div class="container about">
+          <div>
+            <p class="eyebrow" data-i18n="about.eyebrow">Sobre nosotros</p>
+            <h2 data-i18n="about.title">Tradicion y cuidado en cada origen</h2>
+          </div>
+          <div>
+            <p data-i18n="about.body">
+              Cafe Cruz de la Colina nace entre montanas, donde el clima y el tiempo respetan cada grano. Trabajamos con
+              productores locales, seleccionando cosechas de altura y tostando en pequenos lotes para preservar sus
+              aromas naturales. Cada taza refleja oficio, paciencia y una busqueda constante de calidad.
+            </p>
+            <div class="about-metrics">
+              <div>
+                <span class="metric">+12</span>
+                <span class="metric-label" data-i18n="about.metric1">fincas aliadas</span>
+              </div>
+              <div>
+                <span class="metric">48h</span>
+                <span class="metric-label" data-i18n="about.metric2">del tostador al envio</span>
+              </div>
+              <div>
+                <span class="metric">100%</span>
+                <span class="metric-label" data-i18n="about.metric3">trazabilidad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section alt">
+        <div class="container contact">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+            <h2 data-i18n="contact.title">Hablemos de tu cafe ideal</h2>
+            <p data-i18n="contact.subtitle">
+              Cuentanos tu necesidad y te asesoramos con el perfil perfecto.
+            </p>
+            <div class="contact-info">
+              <div>
+                <span class="label" data-i18n="contact.phone">Telefono</span>
+                <span>+57 300 000 0000</span>
+              </div>
+              <div>
+                <span class="label" data-i18n="contact.email">Correo</span>
+                <span>hola@cafecruzdelacolina.com</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              <span data-i18n="contact.name">Nombre</span>
+              <input type="text" name="nombre" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              <span data-i18n="contact.emailLabel">Correo</span>
+              <input type="email" name="correo" placeholder="tucorreo@email.com" required />
+            </label>
+            <label>
+              <span data-i18n="contact.message">Mensaje</span>
+              <textarea name="mensaje" rows="4" placeholder="Cuentanos que estas buscando" required></textarea>
+            </label>
+            <button class="btn primary" type="submit" data-i18n="contact.send">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>Cafe Cruz de la Colina</h3>
+          <p data-i18n="footer.tagline">Cafe premium tostado en origen.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.quick">Enlaces rapidos</h4>
+          <ul>
+            <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#cafes" data-i18n="nav.coffees">Cafes</a></li>
+            <li><a href="#producto" data-i18n="nav.product">Producto</a></li>
+            <li><a href="#complementos" data-i18n="nav.complements">Complementos</a></li>
+            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.social">Redes sociales</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+            <li><a href="https://wa.me/573000000000" target="_blank" rel="noreferrer">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Contacto</h4>
+          <p>+57 300 000 0000</p>
+          <p>hola@cafecruzdelacolina.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copy">(c) 2026 Cafe Cruz de la Colina. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <h3 data-i18n="cart">Carrito</h3>
+        <span class="cart-status">0</span>
+      </div>
+      <p class="cart-note" data-i18n="cart.note">
+        Tu carrito esta listo para integracion de pagos.
+      </p>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>

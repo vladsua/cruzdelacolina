@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cafe Robusta | Cafe Cruz de la Colina</title>
+    <meta
+      name="description"
+      content="Cafe Robusta premium: cuerpo intenso, sabor fuerte y alta cafeina. Informacion, perfil de sabor y presentaciones."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Cafe Cruz de la Colina">
+          <div class="logo-mark" aria-hidden="true"></div>
+          <div class="logo-text">
+            <span class="brand" data-i18n="brand">Cafe Cruz de la Colina</span>
+            <span class="tagline" data-i18n="tagline">Cafe artesanal premium</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Principal">
+          <ul>
+            <li><a href="index.html#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li class="has-dropdown">
+              <button class="nav-trigger" type="button" aria-expanded="false" data-i18n="nav.coffees">
+                Cafes
+              </button>
+              <ul class="dropdown">
+                <li><a href="cafe-arabigo.html" data-i18n="nav.arabica">Cafe Arabigo</a></li>
+                <li><a href="cafe-robusta.html" data-i18n="nav.robusta">Cafe Robusta</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#producto" data-i18n="nav.product">Producto</a></li>
+            <li><a href="index.html#complementos" data-i18n="nav.complements">Complementos</a></li>
+            <li><a href="index.html#nosotros" data-i18n="nav.about">Sobre Nosotros</a></li>
+            <li><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-toggle" role="group" aria-label="Selector de idioma">
+            <button class="lang-btn active" type="button" data-lang="es">ES</button>
+            <button class="lang-btn" type="button" data-lang="en">EN</button>
+          </div>
+          <button class="cart-btn" type="button" aria-label="Carrito">
+            <span data-i18n="cart">Carrito</span>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <section class="product-hero">
+        <div class="container product-hero-inner">
+          <div class="product-hero-text">
+            <p class="eyebrow" data-i18n="robusta.eyebrow">Variedad intensa</p>
+            <h1 data-i18n="robusta.title">Cafe Robusta</h1>
+            <p class="lead" data-i18n="robusta.description">
+              Cuerpo intenso, sabor fuerte y mayor cafeina. Ideal para mezclas potentes y preparaciones energizantes.
+            </p>
+            <div class="price">$ 44.000</div>
+            <div class="hero-actions">
+              <button class="btn primary" type="button" data-i18n="buy">Comprar ahora</button>
+              <a class="btn ghost" href="index.html#cafes" data-i18n="back">Volver al catalogo</a>
+            </div>
+            <div class="product-highlights">
+              <div>
+                <span class="label" data-i18n="robusta.intensityLabel">Intensidad</span>
+                <span class="value" data-i18n="robusta.intensity">Alta</span>
+              </div>
+              <div>
+                <span class="label" data-i18n="robusta.grindLabel">Molienda</span>
+                <span class="value" data-i18n="robusta.grind">Media / Gruesa</span>
+              </div>
+              <div>
+                <span class="label" data-i18n="robusta.presentationsLabel">Presentaciones</span>
+                <span class="value" data-i18n="robusta.presentations">250g, 500g, 1kg</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-hero-media">
+            <img src="01.png" alt="Planta de Cafe Robusta" />
+            <img src="03.jpg" alt="Cafe tostado y molido" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container product-details">
+          <div>
+            <h2 data-i18n="robusta.infoTitle">Definicion de la variedad</h2>
+            <p data-i18n="robusta.infoBody">
+              El Cafe Robusta es resistente y productivo. Su grano concentra mas cafeina y brinda un cuerpo denso, por
+              eso se usa con frecuencia en mezclas y preparaciones fuertes.
+            </p>
+          </div>
+          <div>
+            <h3 data-i18n="robusta.flavorTitle">Perfil de sabor</h3>
+            <ul class="flavor-list">
+              <li data-i18n="robusta.flavor1">Notas a cacao y frutos secos</li>
+              <li data-i18n="robusta.flavor2">Final persistente y terroso</li>
+              <li data-i18n="robusta.flavor3">Cuerpo alto y textura marcada</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="robusta.prepTitle">Recomendado para</h3>
+            <ul class="flavor-list">
+              <li data-i18n="robusta.prep1">Espresso intenso y blends</li>
+              <li data-i18n="robusta.prep2">Bebidas con leche y crema</li>
+              <li data-i18n="robusta.prep3">Consumo energetico</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>Cafe Cruz de la Colina</h3>
+          <p data-i18n="footer.tagline">Cafe premium tostado en origen.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.quick">Enlaces rapidos</h4>
+          <ul>
+            <li><a href="index.html#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="index.html#cafes" data-i18n="nav.coffees">Cafes</a></li>
+            <li><a href="index.html#producto" data-i18n="nav.product">Producto</a></li>
+            <li><a href="index.html#complementos" data-i18n="nav.complements">Complementos</a></li>
+            <li><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.social">Redes sociales</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+            <li><a href="https://wa.me/573000000000" target="_blank" rel="noreferrer">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contact">Contacto</h4>
+          <p>+57 300 000 0000</p>
+          <p>hola@cafecruzdelacolina.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copy">(c) 2026 Cafe Cruz de la Colina. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <h3 data-i18n="cart">Carrito</h3>
+        <span class="cart-status">0</span>
+      </div>
+      <p class="cart-note" data-i18n="cart.note">
+        Tu carrito esta listo para integracion de pagos.
+      </p>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
