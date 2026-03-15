@@ -300,8 +300,19 @@ textarea:focus-visible {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+.contact-form .btn.ghost {
+  color: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
 .btn.ghost:hover {
   border-color: #fff;
+}
+
+.contact-form .btn.ghost:hover {
+  color: #fff;
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
 }
 
 .hero-meta {
